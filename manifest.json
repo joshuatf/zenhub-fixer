@@ -1,0 +1,16 @@
+{
+    "name": "ZenHub Fixer",
+    "action": {},
+    "description": "Fix the annoying parts of ZenHub",
+    "version": "0.1.0",
+    "manifest_version": 3,
+    "permissions": [
+      "activeTab",
+      "scripting"
+    ],
+    "content_scripts": [{
+      "js": ["content.js"],
+      "matches": ["https://app.zenhub.com/*"],
+      "run_at": "document_end"
+    }]
+  }
